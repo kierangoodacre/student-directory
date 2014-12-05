@@ -1,3 +1,4 @@
+student_count = 9
 puts "The students of December 2014 cohort are..."
 puts "----------------"
 puts "Kieran Goodacre"
@@ -9,6 +10,4 @@ puts "El Goucho"
 puts "Iceman"
 puts "Fireman"
 puts "Donmar"
-print "Overall we have "
-print 9
-puts " great students"
+print "Overall we have #{student_count} great students"
