@@ -8,3 +8,7 @@ puts "Superman"
 puts "El Goucho"
 puts "Iceman"
 puts "Fireman"
+puts "Donmar"
+print "Overall we have "
+print 9
+puts " great students"
