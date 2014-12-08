@@ -1,29 +1,29 @@
 def input_students
-	puts "Please enter name of the students"
-	puts "To finish press enter twice"
+	p "Please enter name of the students"
+	p "To finish press enter twice"
 	students = []
 	name = gets.chomp
 	while !name.empty? do
 		students << {:name => name, :cohort => :december}
-		puts "Now we have #{students.length} students"
+		p "Now we have #{students.length} students"
 		name = gets.chomp
 	end
 	students
 end
 
 def print_header
-puts "The students of December 2014 cohort are..."
-puts "----------------"
+p "The students of December 2014 cohort are..."
+p "----------------"
 end
 
 def print(students)
-	students.each do |student|
-		puts "#{student[:name]} (#{student[:cohort]} cohort)"
+	students.each_with_index do |student, i|
+		p "#{i}: #{student[:name]} (#{student[:cohort]} cohort)" if student[:name].start_with? "A"
 	end
 end
 
 def print_footer(names)
-puts "Overall we have #{names.length} great students"
+p "Overall we have #{names.length} great students"
 end
 
 students = input_students
